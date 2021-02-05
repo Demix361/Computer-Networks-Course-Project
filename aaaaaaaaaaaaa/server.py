@@ -3,7 +3,7 @@ from protocol import MyProtocol
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.setblocking(False)
-server.bind(('127.0.0.1', 9090))
+server.bind(('', 9090))
 server.listen(4)
 socket_list = [server]
 clients = []

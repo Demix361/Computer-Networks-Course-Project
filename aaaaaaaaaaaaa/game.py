@@ -257,6 +257,9 @@ class PlayerAction(Action, RectMapCollider):
 		dx = self.target.velocity[0]
 		dy = self.target.velocity[1]
 
+		if self.target.position[0] < -1000 or self.target.position[1] < -1000:
+			self.target.position = 500, 500
+
 		# Анимация покоя
 		if self.right and self.turn_right == 0:
 			self.idle_right += 1

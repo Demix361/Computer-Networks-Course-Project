@@ -12,14 +12,10 @@ from cocos.scenes import FadeTransition
 
 import socket
 from time import sleep
-from PyQt5.QtCore import pyqtSignal, QObject
 
 import menu
 from protocol import MyProtocol
 from game import Level1Scene
-
-class CommunicateMain(QObject):
-	sig = pyqtSignal()
 
 
 class Game:
@@ -33,18 +29,15 @@ class Game:
 
 		self.player_id = None
 		self.ready = False
-		self.max_players = 2
+		self.max_players = 3
 		self.sock = None
-
-		self.sig_wait_server = CommunicateMain()
-		self.sig_wait_server.sig.connect(self.wait_server)
 
 	def start(self):
 		director.run(self.menu_scene)
 
 	def connect_to_server(self):
 		self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		self.sock.connect(('127.0.0.1', 9090))
+		self.sock.connect(('188.244.6.5', 9090))
 
 		mes = {'type': 'connect'}
 		mes_bit = MyProtocol.getByteStrFromData(mes)
