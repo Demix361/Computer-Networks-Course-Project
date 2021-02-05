@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="80" height="25" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="1">
+ <tileset firstgid="1" name="Terrain (32x32)" tilewidth="32" tileheight="32" tilecount="247" columns="19">
+  <image source="Terrain (32x32).png" width="608" height="416"/>
+ </tileset>
+ <tileset firstgid="248" name="Decorations (32x32)" tilewidth="32" tileheight="32" tilecount="42" columns="7">
+  <image source="Decorations (32x32).png" width="224" height="192"/>
+ </tileset>
+ <layer id="1" name="background" width="80" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztmL0RwyAMRrV9ksIewHYRD+BkmHSexjQ0XCIhmyDBfcVrhLgTj+N3JqIZAJDNLXA34uG0Lg2r4dwtTNtkWFcrwB/8/WIIvBjGi/m9++PG9m182vze/T1Jd+5o83v3VwP4g7+apGfMG/5U7jhf3vylcz0KcU/uPPhL95ZJiHtyB3/X3JWs6+w6tPbHuYt/K9z/S6m6znqw9Ce5i3fpGveX1vzlupP8bcS/p3NJa9mEuLZfSX8ad5K/Vii5T2vc9eLvX+sk8gnsyj4AgPY4AKobupg=
+  </data>
+ </layer>
+ <layer id="2" name="decorations" width="80" height="25">
+  <data encoding="base64" compression="zlib">
+   eJzt1DkOwDAIBEB4QY4ix/8/GtpElty5iGe6RYhiCyIAAAAAgJksGbHme7ZV3rO/R8RRnZyfXq7Kd/b3YCYjfk3r3l+M+DWtewCzewDWtwJJ
+  </data>
+ </layer>
+ <layer id="3" name="base" width="80" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztmEEOwiAQRecS6kIPYF20F9DDqPe/g7BoOiLEodMp0P6X/A1pyc9roISOiDpkNzm73AvnUmkvSR5Univ9+rsVbdQW8KcD/nTAn44t+3u6vCJ5L/S8Z8v+1gD+dMCfDvjTAX95HFyOLAPBnxTvLuarVn/jtz4Jx627SNzV5G/cW8I+qXEruLvwbiV2/wJ/E6G78M5njf/H3HVY2t8/d7yLpb+5Hkr6k7jjXeBvQuqOd+Hp6fuMo82QmDc1Ln3Pwl+OO0/MXyux2Kf5GUUyf8v+rNZJzvzSMyGCWOcDp519wQ==
+  </data>
+ </layer>
+</map>
