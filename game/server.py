@@ -9,7 +9,7 @@ socket_list = [server]
 clients = []
 positions = []
 animations = []
-max_clients = 3
+max_clients = 2
 
 while socket_list:
     sockets_to_read, _, _ = select.select(socket_list, [], [])

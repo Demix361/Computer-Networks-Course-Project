@@ -29,7 +29,7 @@ class Game:
 
 		self.player_id = None
 		self.ready = False
-		self.max_players = 3
+		self.max_players = 2
 		self.sock = None
 
 	def start(self):
@@ -37,7 +37,7 @@ class Game:
 
 	def connect_to_server(self):
 		self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		self.sock.connect(('188.244.6.5', 9090))
+		self.sock.connect(('127.0.0.1', 9090))
 
 		mes = {'type': 'connect'}
 		mes_bit = MyProtocol.getByteStrFromData(mes)
